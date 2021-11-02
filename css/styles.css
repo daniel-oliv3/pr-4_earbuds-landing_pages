@@ -95,4 +95,33 @@ header .social a:hover {
     padding: 100px 70px 0;
     display: flex;
     align-items: center;
+    clip-path: polygon(0 0, 40% 0, 100% 100%, 0 100%);
+}
+
+.text h1 {
+    font-size: 90px;
+    font-weight: 900;
+    color: #fff;
+    line-height: 100px;
+}
+
+.text p {
+    color: #fff;
+    line-height: 28px;
+    padding: 20px 240px 0 0;
+}
+
+.text a {
+    display: inline-block;
+    background-color: #374e58;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    width: 200px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50px;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: 60px;
 }
