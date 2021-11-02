@@ -185,3 +185,42 @@ header .social a:hover {
     transform: scale(.5);
     animation: dots ease 2s 0s infinite;
 }
+
+@keyframes dots {
+    100% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+.info-dot.dot2 button:before {
+    animation-delay: .4s;
+}
+
+.info-dot.dot3 button:before {
+    animation-delay: .8s;
+}
+
+.info-detail {
+    position: fixed;
+    top: 30%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background-color: #fff;
+    width: 50%;
+    padding: 60px;
+    box-shadow: 0 15px 150px #25353c;
+    text-align: center;
+    transition: all ease 0.5s;
+    transform: scale(0);
+    z-index: 9;
+}
+
+.info-detail h3 {
+    margin-bottom: 15px;
+}
+
+.info-detail p {
+    line-height: 28px;
+}
