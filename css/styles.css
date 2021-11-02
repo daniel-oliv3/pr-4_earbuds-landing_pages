@@ -96,6 +96,13 @@ header .social a:hover {
     display: flex;
     align-items: center;
     clip-path: polygon(0 0, 40% 0, 100% 100%, 0 100%);
+    animation: mymove 3s cubic-bezier(.44, .05, 0, .98) 0s;
+}
+
+@keyframes mymove {
+    0% {
+        clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+    }
 }
 
 .text h1 {
@@ -223,4 +230,8 @@ header .social a:hover {
 
 .info-detail p {
     line-height: 28px;
+}
+
+.info-detail.show {
+    transform: scaleY(1);
 }
